@@ -1,0 +1,70 @@
+/* Variables */
+body {
+  width: 1350px;
+  min-height: 535px;
+  background-color: #daaa0e;
+}
+body header {
+  /* Nest Nav */
+}
+body header nav ul {
+  color: white;
+  font-family: Arial, Helvetica, Sans-Serif;
+  padding-left: 5em;
+}
+body header nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* Nest Main */
+main {
+  display: flex;
+  margin: 0 5em;
+  background-color: white;
+  padding: 1.5em;
+}
+main #intro-text {
+  background-color: #d4d5d8;
+  width: 35%;
+  padding-top: 100px;
+  position: relative;
+  text-align: center;
+}
+main #intro-text span {
+  padding: 3em auto;
+  font-family: "Sacramento", cursive;
+  font-size: 3em;
+}
+main #intro-text h3 {
+  font-size: 2em;
+}
+main #intro-text .submit-button {
+  background-color: #daaa0e;
+  color: white;
+  width: 8em;
+  height: 2.5em;
+  border: 0;
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-weight: bold;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+}
+main #intro-image {
+  background-color: white;
+  width: 65%;
+}
+main #intro-image img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  padding-top: 1em;
+  padding-left: 5em;
+  font-family: Arial, Helvetica, Sans-Serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

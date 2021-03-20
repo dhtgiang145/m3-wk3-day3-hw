@@ -1,0 +1,12 @@
+/* Nest Nav */
+nav {
+  ul {
+    color: $color3;
+    font-family: $contentfont;
+    padding-left: 5em;
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+  }
+}

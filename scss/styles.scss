@@ -1,0 +1,65 @@
+/* Variables */
+@import "colors";
+
+// Mixin or Extend for button
+@mixin recbutton {
+  background-color: $color1;
+  color: $color3;
+  width: 8em;
+  height: 2.5em;
+  border: 0;
+  font-family: $contentfont;
+  font-weight: bold;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+}
+
+body {
+  width: 1350px;
+  min-height: 535px;
+  background-color: $color1;
+  header {
+    @import "nav";
+  }
+}
+/* Nest Main */
+main {
+  display: flex;
+  margin: 0 5em;
+  background-color: $color3;
+  padding: 1.5em;
+  #intro-text {
+    background-color: $color4;
+    width: 35%;
+    padding-top: 100px;
+    position: relative;
+    text-align: center;
+    span {
+      padding: 3em auto;
+      font-family: $fancy;
+      font-size: 3em;
+    }
+    h3 {
+      font-size: 2em;
+    }
+    .submit-button {
+      @include recbutton();
+    }
+  }
+  #intro-image {
+    background-color: $color3;
+    width: 65%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+footer {
+  padding-top: 1em;
+  padding-left: 5em;
+  font-family: $contentfont;
+}
